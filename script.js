@@ -1,4 +1,4 @@
-let gero = document.getElementById("add").Value
+let gero = document.getElementById("addd").value
 let joshua = document.getElementsByClassName("tasks");
 console.log(gero);
 let div = document.createElement('div');
