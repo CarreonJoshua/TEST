@@ -1,0 +1,34 @@
+.stable {
+	background-color: red;
+	width: 50%;
+	margin: auto;
+	margin-top: 20%;
+}
+.title {
+	background-color: blue;
+}
+.add {
+	background-color: green;
+}
+.addButton {
+	font-size: 25px;
+}
+.tasks {
+	background-color: red;
+	width: 50%;
+	margin: auto;
+	margin-top: 2px;
+}
+.left {
+	width: 58%;
+	background-color: blue;
+	max-width: 58%;
+}
+.grid {
+	width: 40%;
+	background-color: green;
+}
+#addd {
+	margin-top: 2px;
+	font-size: 25px;
+}
