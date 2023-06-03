@@ -1,36 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #22c1c3, #fdbb2d);
+    color: #fff;
+	min-height: 100vh;
+}
+
+
 .stable {
-	background-color: red;
-	width: 50%;
+	width: 30%;
 	margin: auto;
 	margin-top: 20%;
+	border: none;
+	border-radius: 1rem;
+	background-color: aliceblue;
 }
 .title {
-	background-color: blue;
+	padding: 0.5rem;
+	padding-left: 1rem;
+	font-size: 1.8rem;
+  	background: -webkit-linear-gradient(#226ac3, #7d21f0);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 .add {
 	background-color: green;
 }
 .addButton {
-	font-size: 25px;
+	padding: 0.5rem;
+	padding-left: 0.3rem;
+	font-size: 1.8rem;
+	border: none;
+	background: #fdbb2d;
+	border-radius: 4rem;
 }
 .tasks {
 	background-color: red;
-	width: 50%;
 	margin: auto;
 	margin-top: 5px;
-}
-.left {
-	width: 58%;
-	background-color: blue;
-	max-width: 58%;
+    justify-content: center;
+    align-items: center;
+	width: 27%;
+	border: none;
+	border-radius: 1rem;
+	font-size: 1.3rem;
 }
 .grid {
-	width: 40%;
-	background-color: green;
+	padding-right: 1rem;
 }
 #addData {
 	margin-top: 2px;
 	font-size: 25px;
+	padding: 0.5rem;
+	padding-left: 1rem;
+	border: none;
+	background: #fdbb2d;
+	border-radius: 2rem;
+	justify-content: center;
+    align-items: center;
 }
 ul {
 	padding-top:5px;
@@ -38,17 +71,15 @@ ul {
 }
 li {
 	list-style-type:none;
-	background-color:blue;
 	margin-top:5px;
 	margin-bottom:5px;
-	padding:2px;
+	padding:px;
 }
 .grid {
 	display:inline-block;
 	float:right;
 }
 .close {
-	float:right;
 	background-color:white;
 	margin-left:5px;
 }
@@ -56,3 +87,9 @@ li {
 	float:right;
 	background-color:white;
 }
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
