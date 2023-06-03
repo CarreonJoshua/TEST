@@ -1,39 +1,59 @@
-let gero = document.getElementById("addd").value
-let joshua = document.getElementsByClassName("tasks");
-console.log(gero);
-let div = document.createElement('div');
-let subdiv1 = document.createElement('div')
-let subdiv2 = document.createElement('div')
-let p = document.createElement('p');
-let button1 = document.createElement('button')
-let button2 = document.createElement('button')
-let i;
-function geromie() {
+let i = 0;
+let comparator = 0
+//more or less the adding of new entries
+function script() {
+	let gero = document.querySelector('#addData').value
+	let joshua = document.querySelector('.tasks')
+	let div = document.createElement('div')
+	let button1 = document.createElement('button')
+	let button2 = document.createElement('button')
+	let li = document.createElement('li');
 	if(gero == ""){
-		alert('Please provide a value.')
+		alert('please input a task on the field.')
 	}
 	else {
-		joshua[0].append(div);
-		div.className = "content"
-		div.append(subdiv1)
-		subdiv1.innerText = gero;
-		subdiv1.className = 'left'
-		div.append(subdiv2);
-		subdiv2.className = "grid"
-		subdiv2.align = "right"
-		let div2 = document.getElementsByClassName("grid");
-		div2[0].append(button2);
-		button2.className = "check";
-		button2.innerText = "Done";
-		div2[0].append(button1);
-		button1.className = "hide";
-		button1.innerText = "Delete";
+		document.querySelector('.list').append(li)
+		li.innerText = gero
+		li.style.display = "block"
+		li.append(div)
+		div.className = "grid"
+		div.append(button1)
+		button1.innerText = "remove"
+		button1.className = "close"+i
+		div.append(button2)
+		button2.innerText = "done"
+		button2.className = "done"+i
+		ode()
+		edo()
+		increment()
 	}
 }
-let func = document.getElementsByClassName("hide")
-for(i = 0; i < func.length; i++){
-	func[i].onclick = function hide(){
-		var select = this.parentElement;
-		select.style.display = "none";
+//remove
+function ode() {
+	let li = document.querySelector('.list')
+	let close = document.querySelector('.close'+i)
+	close.onclick = function() {
+		let select = this.parentElement.parentElement
+		select.remove();
 	}
+}
+function edo() {
+	let li = document.querySelector('.list')
+	let done = document.querySelector('.done'+i)
+	done.onclick = function() {
+		let select = this.parentElement.parentElement
+		if(comparator == 1){
+			select.style.textDecoration = "none"
+			comparator = 0
+
+		}
+		else {
+			select.style.textDecoration = "line-through"
+			comparator = 1
+			console.log(comparator)
+		}
+	}
+}
+function increment() {
+	i++
 }
