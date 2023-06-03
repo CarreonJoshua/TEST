@@ -1,3 +1,4 @@
+
 let i = 0;
 let comparator = 0
 //more or less the adding of new entries
